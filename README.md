@@ -1,4 +1,4 @@
-# UnileverDisplayMaximizer
+# Unilever Display Maximizer
 
 ## Overview
 
