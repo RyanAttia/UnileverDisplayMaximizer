@@ -4,7 +4,6 @@ display_types = {
     "side_display": 0.5,
     "split_endcap": 1,
     "quarter_pallet": 0.8,
-    "half_endcap": 1,
     "half_pallet": 1.6,
     "full_endcap": 2,
     "full_pallet": 3.2
@@ -69,7 +68,7 @@ def recommend_products(store, season, discount, special_event, display_type):
         product = row['Product_Name']
 
         # Ice cream placement restriction
-        if ("Ice Cream" in product or "Ben & Jerry" in product) and display_type not in ["half_endcap", "full_endcap"]:
+        if ("Ice Cream" in product or "Ben & Jerry" in product) and display_type not in ["split_endcap", "full_endcap"]:
             continue
 
         adjusted_profit = get_adjusted_profit(row, discount, season, special_event)
